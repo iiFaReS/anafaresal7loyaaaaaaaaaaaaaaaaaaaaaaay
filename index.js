@@ -25,10 +25,10 @@ client.on('ready', () => {
     client.user.setStatus("idle")
 });
 client.on('ready', () => {
-     client.user.setActivity("you",{type: 'WATCHING'});
+     client.user.setActivity("Welcome To The Hell ! ",{type: 'WATCHING'});
  
 });
-const prefix = "$"
+const prefix = "F"
 client.on('message', async msg => {
     if (msg.author.bot) return undefined;
     if (!msg.content.startsWith(prefix)) return undefined;
@@ -319,3 +319,5 @@ function play(guild, song) {
 })
 }
 });
+
+client.login(process.env.BOT_TOKEN);
